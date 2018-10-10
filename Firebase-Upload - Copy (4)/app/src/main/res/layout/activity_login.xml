@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/back1"
+        android:scaleType="centerCrop"
+        android:id="@+id/loginBack"
+        />
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="200dp"
+        android:id="@+id/loginLogo"
+        android:src="@drawable/bslogo1"
+        android:scaleType="fitCenter"
+        android:layout_marginBottom="30dp"
+        />
+
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/loginLogo"
+        android:id="@+id/scrollView"
+        >
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:orientation="vertical"
+            android:background="@drawable/transparent"
+            android:layout_marginEnd="30dp"
+            android:layout_marginStart="30dp"
+            >
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Lets get started"
+                android:textColor="@color/colorWhite"
+                android:textSize="18sp"
+                android:textStyle="bold"
+                android:layout_marginBottom="5dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+                android:paddingTop="10dp"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Just a few details required to get logged in towards your future."
+                android:textColor="@color/colorWhite"
+                android:textSize="12sp"
+                android:layout_marginBottom="30dp"
+                android:paddingStart="10dp"
+                android:paddingEnd="10dp"
+
+                />
+
+            <EditText
+                android:id="@+id/UserEmail"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Email"
+                android:background="@drawable/round_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_person_pin"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:layout_marginBottom="10dp"
+                />
+
+            <EditText
+                android:id="@+id/UserPassword"
+                android:layout_width="match_parent"
+                android:layout_height="40dp"
+                android:hint="Password"
+                android:background="@drawable/round_white"
+                android:layout_marginStart="15dp"
+                android:layout_marginEnd="15dp"
+                android:drawableLeft="@drawable/ic_lock"
+                android:textSize="14sp"
+                android:drawablePadding="5dp"
+                android:paddingStart="10dp"
+                android:paddingLeft="10dp"
+                android:inputType="textPassword"
+                android:layout_marginBottom="10dp"
+                />
+
+
+
+
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="50dp"
+                android:textColor="@color/colorWhite"
+                android:text="Login"
+                android:textStyle="normal"
+                android:layout_gravity="center"
+                android:background="@drawable/register_button"
+                android:layout_marginTop="20dp"
+                android:layout_marginBottom="16dp"
+                android:paddingLeft="20dp"
+                android:paddingRight="20dp"
+                android:onClick="login"
+                />
+
+
+        </LinearLayout>
+
+
+    </ScrollView>
+
+    <TextView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="All rights are reserved to Bowler Scrutinizer Application - 2018"
+        android:textColor="@color/colorWhite"
+        android:layout_below="@id/scrollView"
+        android:layout_marginTop="16dp"
+        android:gravity="center"
+        android:layout_marginEnd="30dp"
+        android:layout_marginStart="30dp"
+
+        />
+
+
+</RelativeLayout>
